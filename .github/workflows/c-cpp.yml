@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: instdeb1
-      run: sudo apt -y upgrade && sudo apt -y install autoconf automake libtool pandoc build-essential pkg-config libssl-dev 
+      run: sudo apt -y upgrade && sudo apt -y install autoconf automake libtool pandoc build-essential pkg-config libssl-dev c-areas
 #    - name: instdeb1
 #      run: sudo apt -y install autoconf automake libtool pandoc
 #    – name: debinstall
