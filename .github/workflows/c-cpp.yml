@@ -8,15 +8,17 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
-    – name: debinstall
-      run: |
-      sudo apt update
-      sudo apt install build-essential pkg-config libssl-dev libffi-dev python3 python3-pip
+    - name: instdeb1
+      run: sudo apt -y update
+    - name: instdeb1
+      run: sudo apt -y install build-essential pkg-config libssl-dev libffi-dev python3 python3-pip
+#    – name: debinstall
+#      run: |
+#       sudo apt update
+#       sudo apt install build-essential pkg-config libssl-dev libffi-dev python3 python3-pip
     - name: autogen
       run: ./autogen.sh
     - name: configure
