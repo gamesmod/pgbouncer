@@ -12,9 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: instdeb1
-      run: sudo apt -y update
-    - name: instdeb1
-      run: sudo apt -y install build-essential pkg-config libssl-dev libffi-dev python3 python3-pip
+      run: sudo apt -y update && sudo apt -y install autoconf automake libtool pandoc
+#    - name: instdeb1
+#      run: sudo apt -y install autoconf automake libtool pandoc
 #    – name: debinstall
 #      run: |
 #       sudo apt update
